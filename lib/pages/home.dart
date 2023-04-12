@@ -6,8 +6,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appbar: AppBar(
-        
+      appBar: AppBar(
+
       )
     );
   }

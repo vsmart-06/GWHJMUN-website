@@ -1,5 +1,3 @@
-import "dart:math";
-
 import "package:flutter/material.dart";
 import "dart:async";
 
@@ -45,6 +43,7 @@ class _HomeState extends State<Home> {
     seconds = time.inSeconds.remainder(60);
 
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text("GWHMUN"),
         centerTitle: true,

@@ -16,10 +16,7 @@ class _HomeState extends State<Home> {
   int? hours;
   int? minutes;
   int? seconds;
-  String days_string = "";
-  String hours_string = "";
-  String minutes_string = "";
-  String seconds_string = "";
+  List<String> time_string = ["", "", "", ""];
   Color primaryColor = Colors.black;
   Color accentColor = Colors.white;
   Size buttonSize = Size(100, 100);
@@ -43,44 +40,87 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    time_string = ["", "", "", ""];
     days = time.inDays;
-    if (days !< 10) {days_string = "0"+days.toString();}
-    else {days_string = days.toString();}
+    if (days !< 10) {time_string[0] = "0"+days.toString();}
+    else {time_string[0] = days.toString();}
     hours = time.inHours.remainder(24);
-    if (hours !< 10) {hours_string = "0"+hours.toString();}
-    else {hours_string = hours.toString();}
+    if (hours !< 10) {time_string[1] = "0"+hours.toString();}
+    else {time_string[1] = hours.toString();}
     minutes = time.inMinutes.remainder(60);
-    if (minutes !< 10) {minutes_string = "0"+minutes.toString();}
-    else {minutes_string = minutes.toString();}
+    if (minutes !< 10) {time_string[2] = "0"+minutes.toString();}
+    else {time_string[2] = minutes.toString();}
     seconds = time.inSeconds.remainder(60);
-    if (seconds !< 10) {seconds_string = "0"+seconds.toString();}
-    else {seconds_string = seconds.toString();}
+    if (seconds !< 10) {time_string[3] = "0"+seconds.toString();}
+    else {time_string[3] = seconds.toString();}
 
     return Scaffold(
       drawer: Drawer(
+        backgroundColor: Colors.grey[900],
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
+            SizedBox(
+              height: 80,
+              child: DrawerHeader(
+                child: Text(
+                  "GWHJMUN 2023",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: GoogleFonts.playfairDisplay().fontFamily,
+                    fontSize: 30
+                  ),
+                )
+              ),
+            ),
             ListTile(
-              title: Text("Home"),
+              title: Text(
+                "Home",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/");
               },
             ),
             ListTile(
-              title: Text("Committees"),
+              title: Text(
+                "Committees",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/committees");
               },
             ),
             ListTile(
-              title: Text("Resources"),
+              title: Text(
+                "Resources",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/resources");
               },
             ),
             ListTile(
-              title: Text("Secretariat"),
+              title: Text(
+                "Secretariat",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/secretariat");
               },
@@ -90,14 +130,21 @@ class _HomeState extends State<Home> {
       ),
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text("GWHMUN"),
-        centerTitle: true,
+        backgroundColor: Colors.black,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096047341049483284/WhatsApp_Image_2023-04-13_at_17.46.50.jpeg"),),
+            Text(
+              "Starts in:",
+              style: TextStyle(
+                color: Colors.white,
+                fontFamily: font,
+                fontSize: 20
+              ),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -108,7 +155,7 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          days_string,
+                          time_string[0],
                           style: TextStyle(
                             backgroundColor: primaryColor,
                             color: accentColor,
@@ -135,7 +182,7 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          hours_string,
+                          time_string[1],
                           style: TextStyle(
                             backgroundColor: primaryColor,
                             color: accentColor,
@@ -162,7 +209,7 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          minutes_string,
+                          time_string[2],
                           style: TextStyle(
                             backgroundColor: primaryColor,
                             color: accentColor,
@@ -189,7 +236,7 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          seconds_string,
+                          time_string[3],
                           style: TextStyle(
                             backgroundColor: primaryColor,
                             color: accentColor,

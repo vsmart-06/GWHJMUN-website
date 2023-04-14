@@ -3,36 +3,78 @@ import "package:google_fonts/google_fonts.dart";
 
 class Secretariat extends StatelessWidget {
 
-  String? titleFont = GoogleFonts.libreBaskerville().fontFamily;
+  String? titleFont = GoogleFonts.playfairDisplay().fontFamily;
+  String? font = GoogleFonts.roboto().fontFamily;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
       drawer: Drawer(
+        backgroundColor: Colors.grey[900],
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
+            SizedBox(
+              height: 80,
+              child: DrawerHeader(
+                child: Text(
+                  "GWHJMUN 2023",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: GoogleFonts.playfairDisplay().fontFamily,
+                    fontSize: 30
+                  ),
+                )
+              ),
+            ),
             ListTile(
-              title: Text("Home"),
+              title: Text(
+                "Home",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/");
               },
             ),
             ListTile(
-              title: Text("Committees"),
+              title: Text(
+                "Committees",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/committees");
               },
             ),
             ListTile(
-              title: Text("Resources"),
+              title: Text(
+                "Resources",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/resources");
               },
             ),
             ListTile(
-              title: Text("Secretariat"),
+              title: Text(
+                "Secretariat",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/secretariat");
               },
@@ -40,9 +82,9 @@ class Secretariat extends StatelessWidget {
           ],
         ),
       ),
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text("Secretariat"),
-        centerTitle: true,
+        backgroundColor: Colors.black,
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -53,7 +95,6 @@ class Secretariat extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
-                  fontWeight: FontWeight.bold,
                   fontFamily: titleFont
                 ),
               ),
@@ -72,11 +113,10 @@ class Secretariat extends StatelessWidget {
                 ],
               ),
               Text(
-                "Organizing committee",
+                "ORGANIZING COMMITTEE",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
-                  fontWeight: FontWeight.bold,
                   fontFamily: titleFont
                 ),
               ),

@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "dart:html";
+import "package:google_fonts/google_fonts.dart";
 
 class Resources extends StatefulWidget {
   @override
@@ -8,35 +9,77 @@ class Resources extends StatefulWidget {
 
 class _ResourcesState extends State<Resources> {
   List<Color> accentColor = [Colors.white, Colors.white, Colors.white];
+  String? font = GoogleFonts.roboto().fontFamily;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
       drawer: Drawer(
+        backgroundColor: Colors.grey[900],
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
+            SizedBox(
+              height: 80,
+              child: DrawerHeader(
+                child: Text(
+                  "GWHJMUN 2023",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: GoogleFonts.playfairDisplay().fontFamily,
+                    fontSize: 30
+                  ),
+                )
+              ),
+            ),
             ListTile(
-              title: Text("Home"),
+              title: Text(
+                "Home",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/");
               },
             ),
             ListTile(
-              title: Text("Committees"),
+              title: Text(
+                "Committees",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/committees");
               },
             ),
             ListTile(
-              title: Text("Resources"),
+              title: Text(
+                "Resources",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/resources");
               },
             ),
             ListTile(
-              title: Text("Secretariat"),
+              title: Text(
+                "Secretariat",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: font,
+                  fontSize: 20
+                ),
+              ),
               onTap: () {
                 Navigator.popAndPushNamed(context, "/secretariat");
               },
@@ -44,9 +87,9 @@ class _ResourcesState extends State<Resources> {
           ],
         ),
       ),
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text("Resources"),
-        centerTitle: true,
+        backgroundColor: Colors.black,
       ),
       body: Center(
         child: Column(

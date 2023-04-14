@@ -1,7 +1,14 @@
 import "package:flutter/material.dart";
 import "dart:html";
 
-class Resources extends StatelessWidget {
+class Resources extends StatefulWidget {
+  @override
+  State<Resources> createState() => _ResourcesState();
+}
+
+class _ResourcesState extends State<Resources> {
+  Color accentColor = Colors.white;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,6 +54,7 @@ class Resources extends StatelessWidget {
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                foregroundColor: MaterialStateProperty.all<Color>(accentColor),
               ),
               child: Text(
                 style: TextStyle(
@@ -59,10 +67,23 @@ class Resources extends StatelessWidget {
               onPressed: () {
                 window.open("https://www.gwhevents.com/committees", "Hi");
               },
+              onHover: (value) {
+                if (value) {
+                  setState(() {
+                    accentColor = Color.fromARGB(255, 34, 139, 34);
+                  });
+                }
+                else {
+                  setState(() {
+                    accentColor = Colors.white;
+                  });
+                }
+              },
             ),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                foregroundColor: MaterialStateProperty.all<Color>(accentColor),
               ),
               child: Text(
                 style: TextStyle(
@@ -75,10 +96,23 @@ class Resources extends StatelessWidget {
               onPressed: () {
                 window.open("https://www.gwhevents.com/committees", "Hi");
               },
+              onHover: (value) {
+                if (value) {
+                  setState(() {
+                    accentColor = Color.fromARGB(255, 34, 139, 34);
+                  });
+                }
+                else {
+                  setState(() {
+                    accentColor = Colors.white;
+                  });
+                }
+              },
             ),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                foregroundColor: MaterialStateProperty.all<Color>(accentColor),
               ),
               child: Text(
                 style: TextStyle(
@@ -90,6 +124,18 @@ class Resources extends StatelessWidget {
               ),
               onPressed: () {
                 window.open("https://www.gwhevents.com/committees", "Hi");
+              },
+              onHover: (value) {
+                if (value) {
+                  setState(() {
+                    accentColor = Color.fromARGB(255, 34, 139, 34);
+                  });
+                }
+                else {
+                  setState(() {
+                    accentColor = Colors.white;
+                  });
+                }
               },
             ),
           ],

@@ -50,25 +50,25 @@ class _HomeState extends State<Home> {
             ListTile(
               title: Text("Home"),
               onTap: () {
-                
+                Navigator.popAndPushNamed(context, "/");
               },
             ),
             ListTile(
               title: Text("Committees"),
               onTap: () {
-                
+                Navigator.popAndPushNamed(context, "/committees");
               },
             ),
             ListTile(
               title: Text("Resources"),
               onTap: () {
-                
+                Navigator.popAndPushNamed(context, "/resources");
               },
             ),
             ListTile(
               title: Text("Secretariat"),
               onTap: () {
-                
+                Navigator.popAndPushNamed(context, "/secretariat");
               },
             ),
           ],
@@ -83,7 +83,7 @@ class _HomeState extends State<Home> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(image: NetworkImage("https://static.wixstatic.com/media/badd19_e06194a4dac54ecfa61c9911f4719b9c~mv2.png/v1/fill/w_128,h_128,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/gwhmun%20logo%20white.png"),),
+            Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096047341049483284/WhatsApp_Image_2023-04-13_at_17.46.50.jpeg"),),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

@@ -1,8 +1,15 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 
-class Committee extends StatelessWidget {
+class Committee extends StatefulWidget {
+  @override
+  State<Committee> createState() => _CommitteeState();
+}
+
+class _CommitteeState extends State<Committee> {
   String? font = GoogleFonts.roboto().fontFamily;
+
+  List<Color> cardColors = [Colors.blue, Colors.blue, Colors.blue, Colors.blue];
 
   @override
   Widget build(BuildContext context) {
@@ -87,9 +94,38 @@ class Committee extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Card(
-
-            )
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Card(
+                  color: cardColors[0],
+                  elevation: 10,
+                  shadowColor: Colors.blueGrey,
+                  borderOnForeground: true,
+                  child: TextButton(
+                    style: ButtonStyle(
+                      minimumSize: MaterialStateProperty.all<Size>(Size(300, 300)),
+                      maximumSize: MaterialStateProperty.all<Size>(Size(300, 300)),
+                    ),
+                    onHover: (value) {
+                      if (value) {
+                        setState(() {
+                        cardColors[0] = Colors.orange;
+                        });
+                      }
+                      else {
+                        setState(() {
+                        cardColors[0] = Colors.blue;
+                        });
+                      }
+                    },
+                    onPressed: () {},
+                    child: Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096047341049483284/WhatsApp_Image_2023-04-13_at_17.46.50.jpeg"),)
+                  )
+                ),
+              ],
+            ),
+            Row()
           ],
         ),
       ),

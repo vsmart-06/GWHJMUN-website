@@ -5,6 +5,9 @@ import "package:website/pages/secretariat_page.dart";
 import "package:website/pages/resources_page.dart";
 
 void main() {
+
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
     MaterialApp(
       routes: {

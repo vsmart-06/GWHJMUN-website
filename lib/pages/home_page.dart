@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "dart:async";
+import "package:google_fonts/google_fonts.dart";
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -15,9 +16,14 @@ class _HomeState extends State<Home> {
   int? hours;
   int? minutes;
   int? seconds;
-  Color primaryColor = Color.fromARGB(255, 34, 139, 34);
+  String days_string = "";
+  String hours_string = "";
+  String minutes_string = "";
+  String seconds_string = "";
+  Color primaryColor = Colors.black;
   Color accentColor = Colors.white;
   Size buttonSize = Size(100, 100);
+  String? font = GoogleFonts.roboto().fontFamily;
 
   @override
   void initState() {
@@ -38,9 +44,17 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     days = time.inDays;
+    if (days !< 10) {days_string = "0"+days.toString();}
+    else {days_string = days.toString();}
     hours = time.inHours.remainder(24);
+    if (hours !< 10) {hours_string = "0"+hours.toString();}
+    else {hours_string = hours.toString();}
     minutes = time.inMinutes.remainder(60);
+    if (minutes !< 10) {minutes_string = "0"+minutes.toString();}
+    else {minutes_string = minutes.toString();}
     seconds = time.inSeconds.remainder(60);
+    if (seconds !< 10) {seconds_string = "0"+seconds.toString();}
+    else {seconds_string = seconds.toString();}
 
     return Scaffold(
       drawer: Drawer(
@@ -93,21 +107,22 @@ class _HomeState extends State<Home> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(primaryColor),
-                            foregroundColor: MaterialStateProperty.all<Color>(accentColor),
-                            minimumSize: MaterialStateProperty.all<Size>(buttonSize),
-                            maximumSize: MaterialStateProperty.all<Size>(buttonSize),
+                        child: Text(
+                          days_string,
+                          style: TextStyle(
+                            backgroundColor: primaryColor,
+                            color: accentColor,
+                            fontFamily: font,
+                            fontSize: 40
                           ),
-                          onPressed: null, 
-                          child: Text(days.toString())
                         ),
                       ),
                       Text(
                         "Days",
                         style: TextStyle(
                           color: Colors.white,
+                          fontFamily: font,
+                          fontSize: 20
                         )
                       )
                     ],
@@ -119,21 +134,22 @@ class _HomeState extends State<Home> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(primaryColor),
-                            foregroundColor: MaterialStateProperty.all<Color>(accentColor),
-                            minimumSize: MaterialStateProperty.all<Size>(buttonSize),
-                            maximumSize: MaterialStateProperty.all<Size>(buttonSize),
+                        child: Text(
+                          hours_string,
+                          style: TextStyle(
+                            backgroundColor: primaryColor,
+                            color: accentColor,
+                            fontFamily: font,
+                            fontSize: 40
                           ),
-                          onPressed: null, 
-                          child: Text(hours.toString(),)
                         ),
                       ),
                       Text(
                         "Hours",
                         style: TextStyle(
                           color: Colors.white,
+                          fontFamily: font,
+                          fontSize: 20
                         )
                       )
                     ],
@@ -145,21 +161,22 @@ class _HomeState extends State<Home> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(primaryColor),
-                            foregroundColor: MaterialStateProperty.all<Color>(accentColor),
-                            minimumSize: MaterialStateProperty.all<Size>(buttonSize),
-                            maximumSize: MaterialStateProperty.all<Size>(buttonSize),
+                        child: Text(
+                          minutes_string,
+                          style: TextStyle(
+                            backgroundColor: primaryColor,
+                            color: accentColor,
+                            fontFamily: font,
+                            fontSize: 40
                           ),
-                          onPressed: null, 
-                          child: Text(minutes.toString())
                         ),
                       ),
                       Text(
                         "Minutes",
                         style: TextStyle(
                           color: Colors.white,
+                          fontFamily: font,
+                          fontSize: 20
                         )
                       )
                     ],
@@ -171,21 +188,22 @@ class _HomeState extends State<Home> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(primaryColor),
-                            foregroundColor: MaterialStateProperty.all<Color>(accentColor),
-                            minimumSize: MaterialStateProperty.all<Size>(buttonSize),
-                            maximumSize: MaterialStateProperty.all<Size>(buttonSize),
+                        child: Text(
+                          seconds_string,
+                          style: TextStyle(
+                            backgroundColor: primaryColor,
+                            color: accentColor,
+                            fontFamily: font,
+                            fontSize: 40
                           ),
-                          onPressed: null, 
-                          child: Text(seconds.toString())
                         ),
                       ),
                       Text(
                         "Seconds",
                         style: TextStyle(
                           color: Colors.white,
+                          fontFamily: font,
+                          fontSize: 20
                         )
                       )
                     ],

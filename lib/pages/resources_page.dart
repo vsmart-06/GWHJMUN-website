@@ -7,7 +7,7 @@ class Resources extends StatefulWidget {
 }
 
 class _ResourcesState extends State<Resources> {
-  Color accentColor = Colors.white;
+  List<Color> accentColor = [Colors.white, Colors.white, Colors.white];
 
   @override
   Widget build(BuildContext context) {
@@ -54,11 +54,11 @@ class _ResourcesState extends State<Resources> {
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                foregroundColor: MaterialStateProperty.all<Color>(accentColor),
+                foregroundColor: MaterialStateProperty.all<Color>(accentColor[0]),
               ),
               child: Text(
                 style: TextStyle(
-                  color: Colors.white,
+                  color: accentColor[0],
                   fontSize: 20,
                   fontWeight: FontWeight.bold
                 ),
@@ -70,12 +70,12 @@ class _ResourcesState extends State<Resources> {
               onHover: (value) {
                 if (value) {
                   setState(() {
-                    accentColor = Color.fromARGB(255, 34, 139, 34);
+                    accentColor[0] = Color.fromARGB(255, 34, 139, 34);
                   });
                 }
                 else {
                   setState(() {
-                    accentColor = Colors.white;
+                    accentColor[0] = Colors.white;
                   });
                 }
               },
@@ -83,11 +83,11 @@ class _ResourcesState extends State<Resources> {
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                foregroundColor: MaterialStateProperty.all<Color>(accentColor),
+                foregroundColor: MaterialStateProperty.all<Color>(accentColor[1]),
               ),
               child: Text(
                 style: TextStyle(
-                  color: Colors.white,
+                  color: accentColor[1],
                   fontSize: 20,
                   fontWeight: FontWeight.bold
                 ),
@@ -99,12 +99,12 @@ class _ResourcesState extends State<Resources> {
               onHover: (value) {
                 if (value) {
                   setState(() {
-                    accentColor = Color.fromARGB(255, 34, 139, 34);
+                    accentColor[1] = Color.fromARGB(255, 34, 139, 34);
                   });
                 }
                 else {
                   setState(() {
-                    accentColor = Colors.white;
+                    accentColor[1] = Colors.white;
                   });
                 }
               },
@@ -112,11 +112,11 @@ class _ResourcesState extends State<Resources> {
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                foregroundColor: MaterialStateProperty.all<Color>(accentColor),
+                foregroundColor: MaterialStateProperty.all<Color>(accentColor[2]),
               ),
               child: Text(
                 style: TextStyle(
-                  color: Colors.white,
+                  color: accentColor[2],
                   fontSize: 20,
                   fontWeight: FontWeight.bold
                 ),
@@ -128,12 +128,12 @@ class _ResourcesState extends State<Resources> {
               onHover: (value) {
                 if (value) {
                   setState(() {
-                    accentColor = Color.fromARGB(255, 34, 139, 34);
+                    accentColor[2] = Color.fromARGB(255, 34, 139, 34);
                   });
                 }
                 else {
                   setState(() {
-                    accentColor = Colors.white;
+                    accentColor[2] = Colors.white;
                   });
                 }
               },

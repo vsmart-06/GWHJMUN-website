@@ -1,6 +1,10 @@
 import "package:flutter/material.dart";
+import "package:google_fonts/google_fonts.dart";
 
 class Secretariat extends StatelessWidget {
+
+  String? titleFont = GoogleFonts.libreBaskerville().fontFamily;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,11 +49,12 @@ class Secretariat extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                "Secretariat",
+                "SECRETARIAT",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
+                  fontFamily: titleFont
                 ),
               ),
               Row(
@@ -71,7 +76,8 @@ class Secretariat extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
+                  fontFamily: titleFont
                 ),
               ),
               Row(

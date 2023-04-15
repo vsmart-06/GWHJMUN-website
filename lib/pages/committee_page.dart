@@ -134,7 +134,7 @@ class _CommitteeState extends State<Committee> {
                               });
                             }
                           },
-                          onPressed: () {},
+                          onPressed: () {Navigator.popAndPushNamed(context, "/unhrc");},
                           child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096448594669736077/cards-removebg-preview.png?width=834&height=834"),)
                         )
                       ),
@@ -166,7 +166,7 @@ class _CommitteeState extends State<Committee> {
                               });
                             }
                           },
-                          onPressed: () {},
+                          onPressed: () {Navigator.popAndPushNamed(context, "/unep");},
                           child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096456906316451890/cards_3.png?width=834&height=834"),)
                         )
                       ),
@@ -203,7 +203,7 @@ class _CommitteeState extends State<Committee> {
                               });
                             }
                           },
-                          onPressed: () {},
+                          onPressed: () {Navigator.popAndPushNamed(context, "/disec");},
                           child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096452662171541646/cards__1_-removebg-preview.png?width=834&height=834"),)
                         )
                       ),
@@ -235,7 +235,7 @@ class _CommitteeState extends State<Committee> {
                               });
                             }
                           },
-                          onPressed: () {},
+                          onPressed: () {Navigator.popAndPushNamed(context, "/unsc");},
                           child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096454839606718546/cards-removebg-preview.png?width=834&height=834"),)
                         )
                       ),

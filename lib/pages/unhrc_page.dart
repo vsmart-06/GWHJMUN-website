@@ -112,7 +112,7 @@ class UNHRC extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(30.0),
                     child: Text(
-                      "UNHRC Agenda: Discussing the Human Rights Violations in the Middle East with special emphasis on the current hostile situation in Iran.",
+                      "Agenda: Discussing the Human Rights Violations in the Middle East with special emphasis on the current hostile situation in Iran.",
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: fontMain,
@@ -173,8 +173,7 @@ class UNHRC extends StatelessWidget {
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5,
                                 child: Text(
-                                  "Back from a break from MUNs, here comes your quirky Vice Chair for UNHRC, Ashvik Mishra. Being fairly experienced, he has been through about 15 MUNs since 2018 with his first Mun being GWHJMUN (or as it was known before, MSPMUN) itself. Recently placing in TISBMUN as DPRK, he loves to represent communist or socialist countries, probably just to make fun of capitalist countries and call everyone in committee a comrade. Outside of committee, he’s obsessed with cars, loves to listen to music and usually doesn’t touch grass (probably is a discord mod). 
-",
+                                  "Back from a break from MUNs, here comes your quirky Vice Chair for UNHRC, Ashvik Mishra. Being fairly experienced, he has been through about 15 MUNs since 2018 with his first Mun being GWHJMUN (or as it was known before, MSPMUN) itself. Recently placing in TISBMUN as DPRK, he loves to represent communist or socialist countries, probably just to make fun of capitalist countries and call everyone in committee a comrade. Outside of committee, he's obsessed with cars, loves to listen to music and usually doesn't touch grass (probably is a discord mod). ",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,

@@ -102,12 +102,13 @@ class DISEC extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    "The Disarmament and International Security Committee",
+                    "The Disarmament and International \nSecurity Committee",
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: fontMain,
                       fontSize: 50
                     ),
+                    textAlign: TextAlign.center,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(30.0),
@@ -118,15 +119,6 @@ class DISEC extends StatelessWidget {
                         fontFamily: fontMain,
                         fontSize: 30
                       ),
-                    ),
-                  ),
-                  Text(
-                    '"The failure of the United Nations - My failure is maybe, in retrospective, that I was not enough aggressive with the members of the Security Council" (Boutros Boutros-Ghali, former Secretary General of the UN)',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: fontMain,
-                      fontSize: 20,
-                      fontStyle: FontStyle.italic
                     ),
                   ),
                   const Padding(
@@ -152,7 +144,7 @@ class DISEC extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 30, 0, 15),
+                          padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -173,7 +165,7 @@ class DISEC extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                          padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -194,7 +186,7 @@ class DISEC extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                          padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -203,7 +195,7 @@ class DISEC extends StatelessWidget {
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5, 
                                 child: Text(
-                                  "From a young age, Soham Dhar has always been interested in and passionate about international relations and foreign affairs. While not the most experienced delegate, MUNs are important to him and hold a special place in his heart. He is a passionate speaker and enjoys the challenge of dealing with issues of vastly differing fields. He effortlessly transitions from eagerly defending his country’s record on fossil fuels to falling to his knees in a dramatic bid for sympathy on the issue of its sovereignty. Out of formal debate, Soham has an easy-going personality and is comfortable with talking to all sorts of delegates. One moment he accuses your country of having an agenda to sabotage his country and portrays you as a backstabber. In the other, he cordially negotiates with you and drives a hard bargain. In the end, you both get what you want and leave committee satisfied-while sharing a good joke or two. \n\nOut of committee, he loves learning. His interests are in very diverse fields which range from history and contemporary politics to mathematics and physics. He is an avid follower of sports, enjoys listening to music and likes watching a TV show every now and then. ",
+                                  "From a young age, Soham Dhar has always been interested in and passionate about international relations and foreign affairs. While not the most experienced delegate, MUNs are important to him and hold a special place in his heart. He is a passionate speaker and enjoys the challenge of dealing with issues of vastly differing fields. He effortlessly transitions from eagerly defending his country's record on fossil fuels to falling to his knees in a dramatic bid for sympathy on the issue of its sovereignty. Out of formal debate, Soham has an easy-going personality and is comfortable with talking to all sorts of delegates. One moment he accuses your country of having an agenda to sabotage his country and portrays you as a backstabber. In the other, he cordially negotiates with you and drives a hard bargain. In the end, you both get what you want and leave committee satisfied-while sharing a good joke or two. \n\nOut of committee, he loves learning. His interests are in very diverse fields which range from history and contemporary politics to mathematics and physics. He is an avid follower of sports, enjoys listening to music and likes watching a TV show every now and then. ",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,
@@ -215,7 +207,7 @@ class DISEC extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                          padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -236,16 +228,16 @@ class DISEC extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 30),
+                          padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096774122945654844/image.png?width=578&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096774216310853712/image.png?width=606&height=834"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5, 
                                 child: Text(
-                                  "Having been introduced into the circuit in 2019, Varun is an avid MUNer and crisis delegate and has already begun making a name for himself in the circuit. After being part of more than 10 MUN conferences to date, Varun cherishes debate, being able to give a firm stance on topics ranging from the breakup of the USSR to the operations of the Chicago Outfit. When he isn’t busy meticulously planning his directives, Varun spends his time mastering the art of procrastination, writing and playing video games -  while attempting to be an economics enthusiast.  ",
+                                  "Having been introduced into the circuit in 2019, Varun is an avid MUNer and crisis delegate and has already begun making a name for himself in the circuit. After being part of more than 10 MUN conferences to date, Varun cherishes debate, being able to give a firm stance on topics ranging from the breakup of the USSR to the operations of the Chicago Outfit. When he isn't busy meticulously planning his directives, Varun spends his time mastering the art of procrastination, writing and playing video games -  while attempting to be an economics enthusiast.  ",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,

@@ -137,7 +137,7 @@ class _ResourcesState extends State<Resources> {
                 "Background Guides"
               ),
               onPressed: () {
-                window.open("https://www.gwhevents.com/committees", "Hi");
+                window.open("https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing", "Hi");
               },
               onHover: (value) {
                 if (value) {

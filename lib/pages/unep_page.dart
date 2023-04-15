@@ -102,7 +102,7 @@ class UNEP extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    "The United Nations Security Council",
+                    "The United Nations Environment Programme",
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: fontMain,
@@ -112,7 +112,7 @@ class UNEP extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(30.0),
                     child: Text(
-                      "Agenda: Emergency Security Council meeting - South China Sea Dispute",
+                      "Agenda: Discussing the devastating impact of climate change in South Asia (With special emphasis on heavy rains in the Indian Subcontinent, floods in Pakistan and melting of the Himalayas).",
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: fontMain,
@@ -157,11 +157,11 @@ class UNEP extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764581088600144/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096767899546427534/image.png?width=622&height=834"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5, 
                                 child: Text(
-                                  "Rahul made his start in MUNs in the original running of the MSPMUN. 20 MUNs later, he has only failed to place in 3. He cannot wait to serve as a chair and this MUN's director-general watching delegates make their own mark (he's a bit more emotional than he admits). Often being the most outspoken (and irritating) delegate in the room, he loves lobbying and giving thunderous speeches - finding ways to make fun of half of the committee in the process. Frequently getting barred at a rate that rivals AIPPM delegates for making silly goofy jokes, he prefers committees like UNSC and DISEC where blackmail and ultimatums are considered acceptable forms of diplomacy. However, he never compromises on international law and regulations and scoffs at delegates who are all bark no bite. Outside of MUNs, he loves music, hockey and a plethora of other things (he swears he's interesting) and aspires to get into computers. ",
+                                  "Vansh Abrol, you may have heard the name. He's the currently serving MUN Prefect and the Secretary-General of GWHJMUN 2023. Abrol has recently gathered a bit of a name in the circuit for his antics in committee sessions. From portraying Shashi Tharoor as immaculately as ever to conducting riots in committee sessions, he will keep you entertained till the very last second. Well, along with entertainment, he does come with his fair share of experience, attending over 15 conferences since 2018. He has received placements in DSMUN, IMUN, IIITA-MUN, HMUN, GWHMUN, SNISMUN, CJCMUN and GEARMUN. \nApart from MUN, he has great interests in Current Affairs, history and sports. He freelances as a local football commentator and never forgets to keep up with his mischief. He can neither confirm nor deny if he's being tracked by the CCP, but anyways, he's eagerly looking forward to watch the world burn with you all!",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,
@@ -178,11 +178,11 @@ class UNEP extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764295917879316/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096767874661634158/image.png?width=622&height=834"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5,
                                 child: Text(
-                                  "The Vice Chair of UNSC has been a passionate munner in the Bangalore circuit ever since her first MUN in the 7th grade sparked an insatiable thirst for global politics and diplomacy. You can often find her being the most dramatic in committee, although never lacking in strategy and research. Her love for negotiation and fiery debate is driven by her interest in current affairs, social justice and literature. Crisis driven committees like UNSC is where she feels most at home and will never decline an opportunity to prove another delegate wrong. Apart from MUN, she dabbles in photography and writing, directing most of her time to further pursuing research about judicial prejudices to support her prospective career in law. ",
+                                  "Ash Nair is best known as the currently serving Cultural Secretary of GWH, or as the guy always with a camera in hand. As an avid debater and MUN enthusiast with several accolades to the name, Nair finds solace in any good debate which can result in creative ideation. \nA musician at heart, much of Nair's free time is spent dabbing in any and every genre of the art form, and, in all honestly, Nair definitely needs to spend more time socializing rather than spending time cooped up in a room with a guitar. Studying psychology and art at school, Nair finds importance in promoting diverse talents of the student body and cannot wait to do so as Vice-Chair (where he WILL do his best to NOT bring up the band Polyphia for the entirety of committee).",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,
@@ -199,11 +199,11 @@ class UNEP extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764623191035914/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096767927228829756/image.png?width=622&height=834"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5, 
                                 child: Text(
-                                  "Vipran Vasan is a passionate and accomplished Model UN delegate with a diverse range of interests, including Physics, Mathematics, Video Games, and Sports. With experience of participating in MUN conferences across Bangalore, Vipran has placed in both General Assemblies and Crisis committees. In addition to his MUN experience, Vipran has a background in debating and public speaking, which provides them with a unique perspective on global issues and international relations. His passion for STEM fuels his interest in understanding how technology and innovation can address the world's most pressing challenges. They are also an avid video game enthusiast, recognizing the power of gaming to bring people together and foster communication and teamwork. As a former delegate, Vipran understands the importance of providing a fair and engaging experience for all participants. They are committed to ensuring that delegates have the opportunity to engage in thoughtful debate and negotiation, while also adhering to the rules and procedures of the conference. \n\nVipran Vasan is excited to serve his first Executive Board position as Moderator of the UNSC. Vipran wishes to give the delegates a substantial impression of MUNs for them to carry it on in the future. For this, Vipran looks forward to working with delegates to create a productive and engaging experience for all. ",
+                                  "Dhruv Mittal is known for a passionate approach to MUN. Having attended and placed in numerous conferences, he is dedicated to ensuring a productive and fulfilling conference experience for all participants and equipping them with the necessary tools to navigate through the complexities of international relations. \n“Going to my first MUN in Grade 6 was one of the best decisions of my life. Since then, MUNs have shown me the world from countless perspectives while meeting wonderful people along the way. MUNs have taught me diplomacy, negotiation, and international relations in an extremely wonderful and interactive manner that I never thought I would enjoy understanding. Over the years, this has induced an eagerness to learn as every conference I have attended has given me something to take back”.",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,

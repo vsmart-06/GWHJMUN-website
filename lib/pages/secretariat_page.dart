@@ -106,12 +106,15 @@ class Secretariat extends StatelessWidget {
                     fontFamily: titleFont
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096761438254678056/1.png?width=952&height=952")), //Secretary General
-                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096761438770573373/2.png?width=952&height=952")) //Director General
-                  ],
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096781696541655150/sec_1.png?width=760&height=760")), //Secretary General
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096781697099509770/sec.png?width=760&height=760")) //Director General
+                    ],
+                  ),
                 ),
                 Text(
                   "ORGANIZING COMMITTEE",
@@ -125,6 +128,7 @@ class Secretariat extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780149673967696/image.png?width=782&height=834")), //Registrations
                       Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780255202652261/image.png?width=792&height=834")) //Acad
@@ -139,12 +143,16 @@ class Secretariat extends StatelessWidget {
                     Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096771840812257381/ocs_1.png?width=536&height=760")) //tech
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780551194689687/image.png?width=788&height=834")), //design
-                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096771840812257381/ocs_1.png?width=536&height=760")) //communication
-                  ],
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780551194689687/image.png?width=788&height=834")), //design
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096771840812257381/ocs_1.png?width=536&height=760")) //communication
+                    ],
+                  ),
                 ),
               ],
             )

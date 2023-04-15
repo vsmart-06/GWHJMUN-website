@@ -109,15 +109,8 @@ class Secretariat extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")), //Secretary General
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")) //Director General
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")), //Crisis Director
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")) //Crisis Director
+                    Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096761438254678056/1.png?width=952&height=952")), //Secretary General
+                    Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096761438770573373/2.png?width=952&height=952")) //Director General
                   ],
                 ),
                 Text(
@@ -131,8 +124,22 @@ class Secretariat extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")), //Registrations
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")) //Delegate affairs
+                    Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096763009252208641/1.png?width=536&height=760")), //Registrations
+                    Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096763009633886288/2.png?width=536&height=760")) //Acad
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096763010103652382/3.png?width=536&height=760")), //log
+                    Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096771840812257381/ocs_1.png?width=536&height=760")) //tech
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096763010103652382/3.png?width=536&height=760")), //design
+                    Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096771840812257381/ocs_1.png?width=536&height=760")) //communication
                   ],
                 ),
               ],

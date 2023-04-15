@@ -102,37 +102,48 @@ class Secretariat extends StatelessWidget {
                   "SECRETARIAT",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 40,
+                    fontSize: 50,
                     fontFamily: titleFont
                   ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")), //Secretary General
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")) //Director General
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")), //Crisis Director
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")) //Crisis Director
+                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096761438254678056/1.png?width=952&height=952")), //Secretary General
+                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096761438770573373/2.png?width=952&height=952")) //Director General
                   ],
                 ),
                 Text(
                   "ORGANIZING COMMITTEE",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 40,
+                    fontSize: 50,
                     fontFamily: titleFont
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780149673967696/image.png?width=782&height=834")), //Registrations
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780255202652261/image.png?width=792&height=834")) //Acad
+                    ],
+                  ),
+                ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")), //Registrations
-                    Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096051388477362246/Add_a_heading.png")) //Delegate affairs
+                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780551194689687/image.png?width=788&height=834")), //log
+                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096771840812257381/ocs_1.png?width=536&height=760")) //tech
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780551194689687/image.png?width=788&height=834")), //design
+                    Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096771840812257381/ocs_1.png?width=536&height=760")) //communication
                   ],
                 ),
               ],

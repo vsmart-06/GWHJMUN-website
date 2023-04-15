@@ -102,7 +102,7 @@ class DISEC extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    "The United Nations Security Council",
+                    "The Disarmament and International Security Committee",
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: fontMain,
@@ -112,7 +112,7 @@ class DISEC extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(30.0),
                     child: Text(
-                      "Agenda: Emergency Security Council meeting - South China Sea Dispute",
+                      "Agenda: Discussing the regulations for denuclearization of the Middle East.",
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: fontMain,
@@ -157,11 +157,11 @@ class DISEC extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764581088600144/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096774026506018866/image.png?width=542&height=834"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5, 
                                 child: Text(
-                                  "Rahul made his start in MUNs in the original running of the MSPMUN. 20 MUNs later, he has only failed to place in 3. He cannot wait to serve as a chair and this MUN's director-general watching delegates make their own mark (he's a bit more emotional than he admits). Often being the most outspoken (and irritating) delegate in the room, he loves lobbying and giving thunderous speeches - finding ways to make fun of half of the committee in the process. Frequently getting barred at a rate that rivals AIPPM delegates for making silly goofy jokes, he prefers committees like UNSC and DISEC where blackmail and ultimatums are considered acceptable forms of diplomacy. However, he never compromises on international law and regulations and scoffs at delegates who are all bark no bite. Outside of MUNs, he loves music, hockey and a plethora of other things (he swears he's interesting) and aspires to get into computers. ",
+                                  "Hey there! I am Arsh. I am a dedicated and passionate MUNer, having started in 6th grade and participated in 10 conferences, and have placed in more than half of the conferences they have attended. In addition to MUN, the writer has a love for football clubs such as FC Barcelona, Arsenal, PSG, and the Argentinian National Football team (You can guess, I am huge Messi fan). I also enjoy playing sports like hockey in PE and also am interested in music, film, and Star Wars. Furthermore, I LOVE history and international relations and hence my passion for MUN. ",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,
@@ -178,11 +178,53 @@ class DISEC extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764295917879316/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096774070818836530/image.png?width=706&height=834"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5,
                                 child: Text(
-                                  "The Vice Chair of UNSC has been a passionate munner in the Bangalore circuit ever since her first MUN in the 7th grade sparked an insatiable thirst for global politics and diplomacy. You can often find her being the most dramatic in committee, although never lacking in strategy and research. Her love for negotiation and fiery debate is driven by her interest in current affairs, social justice and literature. Crisis driven committees like UNSC is where she feels most at home and will never decline an opportunity to prove another delegate wrong. Apart from MUN, she dabbles in photography and writing, directing most of her time to further pursuing research about judicial prejudices to support her prospective career in law. ",
+                                  "Since his first MSPMUN in 6th grade, Anirudh has always been a passionate MUNner and enjoys debating with people over a plethora of topics. From debating on more mature topics such as the legality of the legalization of drugs in around half of the US and discussing whether or not Russia's concerns of NATO encroaching its borders are valid to arguing about very immature stuff like how the shape of SpongeBob's shape doesn't change though he's a sponge and how it isn't physically possible for light to come from Chhota Bheem's body after eating a laddoo, Anirudh can happily talk about anything for hours on end. This has helped him gain all sorts of placements in the 10+ MUNs he has attended. \n\nOutside of MUNs, he is a passionate aerospace enthusiast and can be seen reading many aerospace companies' newsletters or flying a plane simulator at any time. He also loves to play all 3 types of the guitar, listen to music, and is an avid reader of books. ",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: fontMain,
+                                    fontSize: 20
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096774175047303178/image.png?width=606&height=834"),),
+                              Container(
+                                width: MediaQuery.of(context).size.width*2/5, 
+                                child: Text(
+                                  "From a young age, Soham Dhar has always been interested in and passionate about international relations and foreign affairs. While not the most experienced delegate, MUNs are important to him and hold a special place in his heart. He is a passionate speaker and enjoys the challenge of dealing with issues of vastly differing fields. He effortlessly transitions from eagerly defending his country’s record on fossil fuels to falling to his knees in a dramatic bid for sympathy on the issue of its sovereignty. Out of formal debate, Soham has an easy-going personality and is comfortable with talking to all sorts of delegates. One moment he accuses your country of having an agenda to sabotage his country and portrays you as a backstabber. In the other, he cordially negotiates with you and drives a hard bargain. In the end, you both get what you want and leave committee satisfied-while sharing a good joke or two. \n\nOut of committee, he loves learning. His interests are in very diverse fields which range from history and contemporary politics to mathematics and physics. He is an avid follower of sports, enjoys listening to music and likes watching a TV show every now and then. ",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: fontMain,
+                                    fontSize: 20
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096774122945654844/image.png?width=578&height=834"),),
+                              Container(
+                                width: MediaQuery.of(context).size.width*2/5, 
+                                child: Text(
+                                  "Having the biggest switch from hating MUNs with his life to not being able to contain himself for the next, Sunay knows how much a first MUN affects one's perspective. Having had his first MUN online, a redundant overpopulated chaos only leading to headaches, it was at GWHMUN'22 that his MUN journey took a turn as a diplomatic power-delegate. He loves interacting with people and getting to know their perspectives on the agenda only to gaslight them into believing what he thinks should be done. From representing Syria in the Council on Status of Women, Russia in IMF to North Korea in Security council and the drug capitol of Myanmar in UNODC, Sunay has had his fair share of challenges to place in 4 out of his 5 MUNs. \n\nWith all his heart, Sunay looks forward to getting you addicted to MUNs, their hospitable yet brutal environment, taking over the committee with your thoughts yet intently listening to others' (only to prove them wrong) and at the end of the day; going back home with your head held high and a trophy by your side. Apart from straining his voice in committees, Sunay loves to engage himself in experimental and pure sciences, math and over dramatizing any situation at hand.",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,
@@ -199,11 +241,11 @@ class DISEC extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764623191035914/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096774122945654844/image.png?width=578&height=834"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5, 
                                 child: Text(
-                                  "Vipran Vasan is a passionate and accomplished Model UN delegate with a diverse range of interests, including Physics, Mathematics, Video Games, and Sports. With experience of participating in MUN conferences across Bangalore, Vipran has placed in both General Assemblies and Crisis committees. In addition to his MUN experience, Vipran has a background in debating and public speaking, which provides them with a unique perspective on global issues and international relations. His passion for STEM fuels his interest in understanding how technology and innovation can address the world's most pressing challenges. They are also an avid video game enthusiast, recognizing the power of gaming to bring people together and foster communication and teamwork. As a former delegate, Vipran understands the importance of providing a fair and engaging experience for all participants. They are committed to ensuring that delegates have the opportunity to engage in thoughtful debate and negotiation, while also adhering to the rules and procedures of the conference. \n\nVipran Vasan is excited to serve his first Executive Board position as Moderator of the UNSC. Vipran wishes to give the delegates a substantial impression of MUNs for them to carry it on in the future. For this, Vipran looks forward to working with delegates to create a productive and engaging experience for all. ",
+                                  "Having been introduced into the circuit in 2019, Varun is an avid MUNer and crisis delegate and has already begun making a name for himself in the circuit. After being part of more than 10 MUN conferences to date, Varun cherishes debate, being able to give a firm stance on topics ranging from the breakup of the USSR to the operations of the Chicago Outfit. When he isn’t busy meticulously planning his directives, Varun spends his time mastering the art of procrastination, writing and playing video games -  while attempting to be an economics enthusiast.  ",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,
@@ -213,7 +255,7 @@ class DISEC extends StatelessWidget {
                               ),
                             ],
                           ),
-                        ),
+                        )
                       ],
                     ),
                   )

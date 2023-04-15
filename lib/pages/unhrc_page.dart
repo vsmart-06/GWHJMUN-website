@@ -102,7 +102,7 @@ class UNHRC extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    "The United Nations Security Council",
+                    "The United Nations Human Rights Council",
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: fontMain,
@@ -112,21 +112,12 @@ class UNHRC extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(30.0),
                     child: Text(
-                      "Agenda: Emergency Security Council meeting - South China Sea Dispute",
+                      "UNHRC Agenda: Discussing the Human Rights Violations in the Middle East with special emphasis on the current hostile situation in Iran.",
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: fontMain,
                         fontSize: 30
                       ),
-                    ),
-                  ),
-                  Text(
-                    '"The failure of the United Nations - My failure is maybe, in retrospective, that I was not enough aggressive with the members of the Security Council" (Boutros Boutros-Ghali, former Secretary General of the UN)',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: fontMain,
-                      fontSize: 20,
-                      fontStyle: FontStyle.italic
                     ),
                   ),
                   const Padding(
@@ -157,11 +148,11 @@ class UNHRC extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764581088600144/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773157618200646/image.png?width=602&height=832"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5, 
                                 child: Text(
-                                  "Rahul made his start in MUNs in the original running of the MSPMUN. 20 MUNs later, he has only failed to place in 3. He cannot wait to serve as a chair and this MUN's director-general watching delegates make their own mark (he's a bit more emotional than he admits). Often being the most outspoken (and irritating) delegate in the room, he loves lobbying and giving thunderous speeches - finding ways to make fun of half of the committee in the process. Frequently getting barred at a rate that rivals AIPPM delegates for making silly goofy jokes, he prefers committees like UNSC and DISEC where blackmail and ultimatums are considered acceptable forms of diplomacy. However, he never compromises on international law and regulations and scoffs at delegates who are all bark no bite. Outside of MUNs, he loves music, hockey and a plethora of other things (he swears he's interesting) and aspires to get into computers. ",
+                                  "With a seemingly inexhaustible tolerance for fruitless debates and a passion for politics, Akshara Bhat is always ready for a challenge. Apart from arguing way too much with anyone willing to partake, she spends her time reading books, writing film reviews, and trying to explore new corners of the city. Often known for being the most diplomatic and respectful delegate in committee, her tact has led her to win accolades at prestigious MUNs across India. Akshara is a firm believer in using MUN as a platform for change and invites the delegates for an enthralling and expeditious conference.  ",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,
@@ -178,11 +169,12 @@ class UNHRC extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764295917879316/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773184537231400/image.png?width=602&height=832"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5,
                                 child: Text(
-                                  "The Vice Chair of UNSC has been a passionate munner in the Bangalore circuit ever since her first MUN in the 7th grade sparked an insatiable thirst for global politics and diplomacy. You can often find her being the most dramatic in committee, although never lacking in strategy and research. Her love for negotiation and fiery debate is driven by her interest in current affairs, social justice and literature. Crisis driven committees like UNSC is where she feels most at home and will never decline an opportunity to prove another delegate wrong. Apart from MUN, she dabbles in photography and writing, directing most of her time to further pursuing research about judicial prejudices to support her prospective career in law. ",
+                                  "Back from a break from MUNs, here comes your quirky Vice Chair for UNHRC, Ashvik Mishra. Being fairly experienced, he has been through about 15 MUNs since 2018 with his first Mun being GWHJMUN (or as it was known before, MSPMUN) itself. Recently placing in TISBMUN as DPRK, he loves to represent communist or socialist countries, probably just to make fun of capitalist countries and call everyone in committee a comrade. Outside of committee, he’s obsessed with cars, loves to listen to music and usually doesn’t touch grass (probably is a discord mod). 
+",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,
@@ -199,11 +191,11 @@ class UNHRC extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096764623191035914/image.png?width=638&height=834"),),
+                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773217944875079/image.png?width=602&height=832"),),
                               Container(
                                 width: MediaQuery.of(context).size.width*2/5, 
                                 child: Text(
-                                  "Vipran Vasan is a passionate and accomplished Model UN delegate with a diverse range of interests, including Physics, Mathematics, Video Games, and Sports. With experience of participating in MUN conferences across Bangalore, Vipran has placed in both General Assemblies and Crisis committees. In addition to his MUN experience, Vipran has a background in debating and public speaking, which provides them with a unique perspective on global issues and international relations. His passion for STEM fuels his interest in understanding how technology and innovation can address the world's most pressing challenges. They are also an avid video game enthusiast, recognizing the power of gaming to bring people together and foster communication and teamwork. As a former delegate, Vipran understands the importance of providing a fair and engaging experience for all participants. They are committed to ensuring that delegates have the opportunity to engage in thoughtful debate and negotiation, while also adhering to the rules and procedures of the conference. \n\nVipran Vasan is excited to serve his first Executive Board position as Moderator of the UNSC. Vipran wishes to give the delegates a substantial impression of MUNs for them to carry it on in the future. For this, Vipran looks forward to working with delegates to create a productive and engaging experience for all. ",
+                                  "Amisha is a 9th grader who discovered her love for MUNs last August, starting much too ambitiously with HMUN. Armed by wonderful experiences of past MUNs, and placements at MUNs like IRMUN, TISBMUN, GEARMUN, and CLMUN, she's eager to provide her juniors with a wonderful first MUN experience. In addition to MUNs, she loves debate (arguing), reading, and writing ",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: fontMain,

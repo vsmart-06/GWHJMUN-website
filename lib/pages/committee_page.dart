@@ -10,11 +10,11 @@ class _CommitteeState extends State<Committee> {
   String? font = GoogleFonts.roboto().fontFamily;
 
   List<Color> cardColors = [Colors.black, Colors.black, Colors.black, Colors.black];
-  Size cardSize = Size(350, 350);
   ScrollController scroll = ScrollController();
 
   @override
   Widget build(BuildContext context) {
+    Size cardSize = Size(MediaQuery.of(context).size.height/1.8, MediaQuery.of(context).size.height/1.8);
     return Scaffold(
       drawer: Drawer(
         backgroundColor: Colors.grey[900],

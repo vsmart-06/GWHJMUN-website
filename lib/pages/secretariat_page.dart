@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 
 class Secretariat extends StatelessWidget {
+  Secretariat({super.key});
 
   String? titleFont = GoogleFonts.playfairDisplay().fontFamily;
   String? font = GoogleFonts.roboto().fontFamily;

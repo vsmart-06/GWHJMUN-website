@@ -166,7 +166,7 @@ class _ResourcesState extends State<Resources> {
                 "Rules of Procedure"
               ),
               onPressed: () {
-                window.open("https://www.gwhevents.com/committees", "Hi");
+                window.open("https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing", "Hi");
               },
               onHover: (value) {
                 if (value) {

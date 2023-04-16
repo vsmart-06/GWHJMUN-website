@@ -1,12 +1,22 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
+import "dart:html";
 
-class DISEC extends StatelessWidget {
+class DISEC extends StatefulWidget {
   DISEC({super.key});
 
+  @override
+  State<DISEC> createState() => _DISECState();
+}
+
+class _DISECState extends State<DISEC> {
   String? fontMain = GoogleFonts.playfairDisplay().fontFamily;
+
   String? font = GoogleFonts.roboto().fontFamily;
+
   ScrollController scroll = ScrollController();
+
+  Color buttonColor = Colors.black;
 
   @override
   Widget build(BuildContext context) {
@@ -121,6 +131,44 @@ class DISEC extends StatelessWidget {
                       fontSize: 30
                     ),
                   ),
+                ),
+                TextButton(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(buttonColor),
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                        side: BorderSide(color: Colors.white)
+                      )
+                    )
+                  ),
+                  onPressed: () {
+                    window.open("https://drive.google.com/file/d/1jG442BQskB8PictmgwO6T9pjIIkbo30F/view?usp=sharing", "Background Guide");
+                  }, 
+                  onHover: (value) {
+                    if (value) {
+                      setState(() {
+                        buttonColor = Color(0x99313133);
+                      });
+                    }
+                    else {
+                      setState(() {
+                        buttonColor = Colors.black;
+                      });
+                    }
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      "Background Guide",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: fontMain,
+                        fontSize: 20
+                      )
+                    ),
+                  )
                 ),
                 const Padding(
                   padding: EdgeInsets.all(30.0),

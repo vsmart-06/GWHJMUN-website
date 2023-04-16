@@ -150,8 +150,8 @@ class Secretariat extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096780551194689687/image.png?width=788&height=834")), //design
-                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096771840812257381/ocs_1.png?width=536&height=760")) //communication
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097140107083001986/ocs.png?width=672&height=950")), //design
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097140409530069134/image.png?width=1272&height=834")) //communication
                     ],
                   ),
                 ),

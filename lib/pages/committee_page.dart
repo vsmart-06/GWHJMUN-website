@@ -15,7 +15,7 @@ class _CommitteeState extends State<Committee> {
 
   @override
   Widget build(BuildContext context) {
-    Size cardSize = Size(MediaQuery.of(context).size.width/3, MediaQuery.of(context).size.width/3);
+    Size cardSize = Size(MediaQuery.of(context).size.width/4, MediaQuery.of(context).size.width/4);
     return Scaffold(
       drawer: Drawer(
         backgroundColor: Colors.grey[900],

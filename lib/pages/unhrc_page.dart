@@ -88,131 +88,129 @@ class UNHRC extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
       ),
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(100, 0, 100, 0),
-        child: Center(
-          child: RawScrollbar(
-            thumbColor: Color(0xFF313133),
-            thickness: 10,
-            thumbVisibility: true,
-            trackVisibility: true,
+      body: Center(
+        child: RawScrollbar(
+          thumbColor: Color(0xFF313133),
+          thickness: 10,
+          thumbVisibility: true,
+          trackVisibility: true,
+          controller: scroll,
+          child: SingleChildScrollView(
             controller: scroll,
-            child: SingleChildScrollView(
-              controller: scroll,
-              child: Column(
-                children: [
-                  Text(
-                    "The United Nations Human Rights Council",
+            child: Column(
+              children: [
+                Text(
+                  "The United Nations Human Rights Council",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: fontMain,
+                    fontSize: 50
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(100, 30, 100, 30),
+                  child: Text(
+                    "Agenda: Discussing the Human Rights Violations in the Middle East with special emphasis on the current hostile situation in Iran.",
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: fontMain,
-                      fontSize: 50
+                      fontSize: 30
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(30.0),
-                    child: Text(
-                      "Agenda: Discussing the Human Rights Violations in the Middle East with special emphasis on the current hostile situation in Iran.",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: fontMain,
-                        fontSize: 30
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(30.0),
+                  child: Divider(
+                    color: Colors.white,
+                    thickness: 2,
+                    indent: 150,
+                    endIndent: 150,
+                  ),
+                ),
+                Text(
+                  "The Executive Board",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: fontMain,
+                    fontSize: 40
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 30, 0, 100),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 30, 0, 15),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773157618200646/image.png?width=602&height=832"),),
+                            Container(
+                              width: MediaQuery.of(context).size.width*2/5, 
+                              child: Text(
+                                "With a seemingly inexhaustible tolerance for fruitless debates and a passion for politics, Akshara Bhat is always ready for a challenge. Apart from arguing way too much with anyone willing to partake, she spends her time reading books, writing film reviews, and trying to explore new corners of the city. Often known for being the most diplomatic and respectful delegate in committee, her tact has led her to win accolades at prestigious MUNs across India. Akshara is a firm believer in using MUN as a platform for change and invites the delegates for an enthralling and expeditious conference.  ",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: fontMain,
+                                  fontSize: 20
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.all(30.0),
-                    child: Divider(
-                      color: Colors.white,
-                      thickness: 2,
-                      indent: 150,
-                      endIndent: 150,
-                    ),
-                  ),
-                  Text(
-                    "The Executive Board",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: fontMain,
-                      fontSize: 40
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 30, 0, 100),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 30, 0, 15),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773157618200646/image.png?width=602&height=832"),),
-                              Container(
-                                width: MediaQuery.of(context).size.width*2/5, 
-                                child: Text(
-                                  "With a seemingly inexhaustible tolerance for fruitless debates and a passion for politics, Akshara Bhat is always ready for a challenge. Apart from arguing way too much with anyone willing to partake, she spends her time reading books, writing film reviews, and trying to explore new corners of the city. Often known for being the most diplomatic and respectful delegate in committee, her tact has led her to win accolades at prestigious MUNs across India. Akshara is a firm believer in using MUN as a platform for change and invites the delegates for an enthralling and expeditious conference.  ",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: fontMain,
-                                    fontSize: 20
-                                  ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773184537231400/image.png?width=602&height=832"),),
+                            Container(
+                              width: MediaQuery.of(context).size.width*2/5,
+                              child: Text(
+                                "Back from a break from MUNs, here comes your quirky Vice Chair for UNHRC, Ashvik Mishra. Being fairly experienced, he has been through about 15 MUNs since 2018 with his first Mun being GWHJMUN (or as it was known before, MSPMUN) itself. Recently placing in TISBMUN as DPRK, he loves to represent communist or socialist countries, probably just to make fun of capitalist countries and call everyone in committee a comrade. Outside of committee, he's obsessed with cars, loves to listen to music and usually doesn't touch grass (probably is a discord mod). ",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: fontMain,
+                                  fontSize: 20
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773184537231400/image.png?width=602&height=832"),),
-                              Container(
-                                width: MediaQuery.of(context).size.width*2/5,
-                                child: Text(
-                                  "Back from a break from MUNs, here comes your quirky Vice Chair for UNHRC, Ashvik Mishra. Being fairly experienced, he has been through about 15 MUNs since 2018 with his first Mun being GWHJMUN (or as it was known before, MSPMUN) itself. Recently placing in TISBMUN as DPRK, he loves to represent communist or socialist countries, probably just to make fun of capitalist countries and call everyone in committee a comrade. Outside of committee, he's obsessed with cars, loves to listen to music and usually doesn't touch grass (probably is a discord mod). ",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: fontMain,
-                                    fontSize: 20
-                                  ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 15, 0, 30),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773217944875079/image.png?width=602&height=832"),),
+                            Container(
+                              width: MediaQuery.of(context).size.width*2/5, 
+                              child: Text(
+                                "Amisha is a 9th grader who discovered her love for MUNs last August, starting much too ambitiously with HMUN. Armed by wonderful experiences of past MUNs, and placements at MUNs like IRMUN, TISBMUN, GEARMUN, and CLMUN, she's eager to provide her juniors with a wonderful first MUN experience. In addition to MUNs, she loves debate (arguing), reading, and writing ",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: fontMain,
+                                  fontSize: 20
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 30),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773217944875079/image.png?width=602&height=832"),),
-                              Container(
-                                width: MediaQuery.of(context).size.width*2/5, 
-                                child: Text(
-                                  "Amisha is a 9th grader who discovered her love for MUNs last August, starting much too ambitiously with HMUN. Armed by wonderful experiences of past MUNs, and placements at MUNs like IRMUN, TISBMUN, GEARMUN, and CLMUN, she's eager to provide her juniors with a wonderful first MUN experience. In addition to MUNs, she loves debate (arguing), reading, and writing ",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: fontMain,
-                                    fontSize: 20
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
+                      ),
+                    ],
+                  ),
+                )
+              ],
             ),
-          )
-        ),
+          ),
+        )
       )
     );
   }

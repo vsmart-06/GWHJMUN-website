@@ -136,7 +136,7 @@ class _ResourcesState extends State<Resources> {
                         }
                       },
                       onPressed: () {window.open("https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk", "Code of Conduct");},
-                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097149949893943296/Screenshot_2023-04-16_at_6.52.07_PM.png?width=1112&height=408"),)
+                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097164610328596581/image.png?width=902&height=392"),)
                     )
                   ),
                 ),
@@ -168,7 +168,7 @@ class _ResourcesState extends State<Resources> {
                         }
                       },
                       onPressed: () {window.open("https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing", "Background Guides");},
-                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097149846932160512/Screenshot_2023-04-16_at_6.51.40_PM.png?width=1128&height=476"),)
+                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097164551507677355/image.png?width=902&height=388"),)
                     )
                   ),
                 ),
@@ -200,7 +200,7 @@ class _ResourcesState extends State<Resources> {
                         }
                       },
                       onPressed: () {window.open("https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing", "Rules of Procedure");},
-                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097149892201283594/Screenshot_2023-04-16_at_6.51.53_PM.png?width=1288&height=512"),)
+                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097164586727252099/image.png?width=898&height=384"),)
                     )
                   ),
                 ),

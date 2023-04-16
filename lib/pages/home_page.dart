@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                 "Home",
                 style: TextStyle(
                   color: Colors.white,
-                  fontFamily: font,
+                  fontFamily: fontTime,
                   fontSize: 20
                 ),
               ),
@@ -93,7 +93,7 @@ class _HomeState extends State<Home> {
                 "Committees",
                 style: TextStyle(
                   color: Colors.white,
-                  fontFamily: font,
+                  fontFamily: fontTime,
                   fontSize: 20
                 ),
               ),
@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                 "Resources",
                 style: TextStyle(
                   color: Colors.white,
-                  fontFamily: font,
+                  fontFamily: fontTime,
                   fontSize: 20
                 ),
               ),
@@ -119,7 +119,7 @@ class _HomeState extends State<Home> {
                 "Secretariat",
                 style: TextStyle(
                   color: Colors.white,
-                  fontFamily: font,
+                  fontFamily: fontTime,
                   fontSize: 20
                 ),
               ),

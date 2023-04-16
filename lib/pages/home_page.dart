@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(image: NetworkImage("https://cdn.discordapp.com/attachments/871659799329255424/1096047341049483284/WhatsApp_Image_2023-04-13_at_17.46.50.jpeg"),),
+            Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097141394793054259/image.png?width=1176&height=638"),),
             Text(
               "Starts in:",
               style: TextStyle(

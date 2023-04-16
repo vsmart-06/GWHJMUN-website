@@ -10,9 +10,12 @@ class Resources extends StatefulWidget {
 class _ResourcesState extends State<Resources> {
   List<Color> accentColor = [Colors.white, Colors.white, Colors.white];
   String? font = GoogleFonts.roboto().fontFamily;
+  String? titleFont = GoogleFonts.playfairDisplay().fontFamily;
+  List<Color> cardColors = [Colors.black, Colors.black, Colors.black];
 
   @override
   Widget build(BuildContext context) {
+    Size cardSize = Size(MediaQuery.of(context).size.width/4, MediaQuery.of(context).size.width/4);
     return Scaffold(
       drawer: Drawer(
         backgroundColor: Colors.grey[900],
@@ -94,92 +97,114 @@ class _ResourcesState extends State<Resources> {
       body: Center(
         child: Column(
           children: [
-            ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                foregroundColor: MaterialStateProperty.all<Color>(accentColor[0]),
+            Text(
+              "RESOURCES",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 50,
+                fontFamily: titleFont
               ),
-              child: Text(
-                style: TextStyle(
-                  color: accentColor[0],
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold
-                ),
-                "Code of Conduct"
-              ),
-              onPressed: () {
-                window.open("https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk", "Hi");
-              },
-              onHover: (value) {
-                if (value) {
-                  setState(() {
-                    accentColor[0] = Color.fromARGB(255, 34, 139, 34);
-                  });
-                }
-                else {
-                  setState(() {
-                    accentColor[0] = Colors.white;
-                  });
-                }
-              },
             ),
-            ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                foregroundColor: MaterialStateProperty.all<Color>(accentColor[1]),
-              ),
-              child: Text(
-                style: TextStyle(
-                  color: accentColor[1],
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Card(
+                    color: cardColors[0],
+                    elevation: 10,
+                    borderOnForeground: true,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: BorderSide(color: Colors.white)
+                    ),
+                    child: TextButton(
+                      style: ButtonStyle(
+                        minimumSize: MaterialStateProperty.all<Size>(cardSize),
+                        maximumSize: MaterialStateProperty.all<Size>(cardSize)
+                      ),
+                      onHover: (value) {
+                        if (value) {
+                          setState(() {
+                          cardColors[0] = Color(0x99313133);
+                          });
+                        }
+                        else {
+                          setState(() {
+                          cardColors[0] = Colors.black;
+                          });
+                        }
+                      },
+                      onPressed: () {window.open("https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk", "Code of Conduct");},
+                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097149949893943296/Screenshot_2023-04-16_at_6.52.07_PM.png?width=1112&height=408"),)
+                    )
+                  ),
                 ),
-                "Background Guides"
-              ),
-              onPressed: () {
-                window.open("https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing", "Hi");
-              },
-              onHover: (value) {
-                if (value) {
-                  setState(() {
-                    accentColor[1] = Color.fromARGB(255, 34, 139, 34);
-                  });
-                }
-                else {
-                  setState(() {
-                    accentColor[1] = Colors.white;
-                  });
-                }
-              },
-            ),
-            ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                foregroundColor: MaterialStateProperty.all<Color>(accentColor[2]),
-              ),
-              child: Text(
-                style: TextStyle(
-                  color: accentColor[2],
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Card(
+                    color: cardColors[1],
+                    elevation: 10,
+                    borderOnForeground: true,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: BorderSide(color: Colors.white)
+                    ),
+                    child: TextButton(
+                      style: ButtonStyle(
+                        minimumSize: MaterialStateProperty.all<Size>(cardSize),
+                        maximumSize: MaterialStateProperty.all<Size>(cardSize)
+                      ),
+                      onHover: (value) {
+                        if (value) {
+                          setState(() {
+                          cardColors[1] = Color(0x99313133);
+                          });
+                        }
+                        else {
+                          setState(() {
+                          cardColors[1] = Colors.black;
+                          });
+                        }
+                      },
+                      onPressed: () {window.open("https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing", "Background Guides");},
+                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097149846932160512/Screenshot_2023-04-16_at_6.51.40_PM.png?width=1128&height=476"),)
+                    )
+                  ),
                 ),
-                "Rules of Procedure"
-              ),
-              onPressed: () {
-                window.open("https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing", "Hi");
-              },
-              onHover: (value) {
-                if (value) {
-                  setState(() {
-                    accentColor[2] = Color.fromARGB(255, 34, 139, 34);
-                  });
-                }
-                else {
-                  setState(() {
-                    accentColor[2] = Colors.white;
-                  });
-                }
-              },
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Card(
+                    color: cardColors[2],
+                    elevation: 10,
+                    borderOnForeground: true,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: BorderSide(color: Colors.white)
+                    ),
+                    child: TextButton(
+                      style: ButtonStyle(
+                        minimumSize: MaterialStateProperty.all<Size>(cardSize),
+                        maximumSize: MaterialStateProperty.all<Size>(cardSize)
+                      ),
+                      onHover: (value) {
+                        if (value) {
+                          setState(() {
+                          cardColors[2] = Color(0x99313133);
+                          });
+                        }
+                        else {
+                          setState(() {
+                          cardColors[2] = Colors.black;
+                          });
+                        }
+                      },
+                      onPressed: () {window.open("https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing", "Rules of Procedure");},
+                      child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097149892201283594/Screenshot_2023-04-16_at_6.51.53_PM.png?width=1288&height=512"),)
+                    )
+                  ),
+                ),
+              ],
             ),
           ],
         ),

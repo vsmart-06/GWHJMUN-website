@@ -106,6 +106,7 @@ class Secretariat extends StatelessWidget {
                     fontSize: 50,
                     fontFamily: titleFont
                   ),
+                  textAlign: TextAlign.center,
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
@@ -124,6 +125,7 @@ class Secretariat extends StatelessWidget {
                     fontSize: 50,
                     fontFamily: titleFont
                   ),
+                  textAlign: TextAlign.center,
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
@@ -150,7 +152,7 @@ class Secretariat extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097140107083001986/ocs.png?width=672&height=950")), //design
+                      Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097186257760682114/ocs_1.png?width=590&height=834")), //design
                       Image(width: MediaQuery.of(context).size.width/3, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097140409530069134/image.png?width=1272&height=834")) //communication
                     ],
                   ),

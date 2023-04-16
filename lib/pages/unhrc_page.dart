@@ -192,7 +192,7 @@ class _UNHRCState extends State<UNHRC> {
                         padding: const EdgeInsets.fromLTRB(0, 30, 0, 15),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773157618200646/image.png?width=602&height=832"),),
                             Container(
@@ -213,9 +213,8 @@ class _UNHRCState extends State<UNHRC> {
                         padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773184537231400/image.png?width=602&height=832"),),
                             Container(
                               width: MediaQuery.of(context).size.width*2/5,
                               child: Text(
@@ -227,6 +226,7 @@ class _UNHRCState extends State<UNHRC> {
                                 ),
                               ),
                             ),
+                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773184537231400/image.png?width=602&height=832"),),
                           ],
                         ),
                       ),
@@ -234,7 +234,7 @@ class _UNHRCState extends State<UNHRC> {
                         padding: const EdgeInsets.fromLTRB(0, 15, 0, 30),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773217944875079/image.png?width=602&height=832"),),
                             Container(

@@ -108,7 +108,7 @@ class _ResourcesState extends State<Resources> {
                 "Code of Conduct"
               ),
               onPressed: () {
-                window.open("https://www.gwhevents.com/committees", "Hi");
+                window.open("https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk", "Hi");
               },
               onHover: (value) {
                 if (value) {

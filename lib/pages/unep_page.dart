@@ -236,7 +236,7 @@ class _UNEPState extends State<UNEP> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096767927228829756/image.png?width=622&height=834"),),
+                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1065212687052718082/1097570853476122655/eb.png?width=450&height=558"),),
                             Container(
                               width: MediaQuery.of(context).size.width*2/5, 
                               child: Text(

@@ -236,7 +236,7 @@ class _UNHRCState extends State<UNHRC> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096773217944875079/image.png?width=602&height=832"),),
+                            Image(width: MediaQuery.of(context).size.width/4, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1098167225296355398/Screenshot_2023-04-19_at_2.13.08_PM.png?width=644&height=834"),),
                             Container(
                               width: MediaQuery.of(context).size.width*2/5, 
                               child: Text(

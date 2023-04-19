@@ -16,7 +16,7 @@ class _UNSCState extends State<UNSC> {
 
   ScrollController scroll = ScrollController();
 
-  Color buttonColor = Colors.black;
+  List<Color> buttonColors = [Colors.black];
 
   @override
   Widget build(BuildContext context) {
@@ -141,43 +141,48 @@ class _UNSCState extends State<UNSC> {
                     ),
                   ),
                 ),
-                TextButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(buttonColor),
-                    foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.white)
-                      )
-                    )
-                  ),
-                  onPressed: () {
-                    window.open("https://drive.google.com/file/d/1KJ0j38pROav3G5iC0kyZDPoqlynXxSQE/view?usp=sharing", "Background Guide");
-                  }, 
-                  onHover: (value) {
-                    if (value) {
-                      setState(() {
-                        buttonColor = Color(0x99313133);
-                      });
-                    }
-                    else {
-                      setState(() {
-                        buttonColor = Colors.black;
-                      });
-                    }
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Text(
-                      "Background Guide",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: fontMain,
-                        fontSize: 20
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TextButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(buttonColors[0]),
+                        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                            side: BorderSide(color: Colors.white)
+                          )
+                        )
+                      ),
+                      onPressed: () {
+                        window.open("https://drive.google.com/file/d/1KJ0j38pROav3G5iC0kyZDPoqlynXxSQE/view?usp=sharing", "Background Guide");
+                      }, 
+                      onHover: (value) {
+                        if (value) {
+                          setState(() {
+                            buttonColors[0] = Color(0x99313133);
+                          });
+                        }
+                        else {
+                          setState(() {
+                            buttonColors[0] = Colors.black;
+                          });
+                        }
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Text(
+                          "Background Guide",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: fontMain,
+                            fontSize: 20
+                          )
+                        ),
                       )
                     ),
-                  )
+                  ],
                 ),
                 const Padding(
                   padding: EdgeInsets.all(30.0),

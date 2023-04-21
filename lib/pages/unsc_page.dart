@@ -16,7 +16,7 @@ class _UNSCState extends State<UNSC> {
 
   ScrollController scroll = ScrollController();
 
-  List<Color> buttonColors = [Colors.black];
+  List<Color> buttonColors = [Colors.black, Colors.black, Colors.black];
 
   @override
   Widget build(BuildContext context) {
@@ -141,7 +141,7 @@ class _UNSCState extends State<UNSC> {
                     ),
                   ),
                 ),
-                Row(
+                Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TextButton(
@@ -174,6 +174,102 @@ class _UNSCState extends State<UNSC> {
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "Background Guide",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: fontMain,
+                            fontSize: 20
+                          )
+                        ),
+                      )
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(30, 10, 30, 10),
+                      child: Divider(
+                        color: Colors.white,
+                        thickness: 2,
+                        indent: 150,
+                        endIndent: 150,
+                      ),
+                    ),
+                    Text(
+                      "Crisis Documents",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: fontMain,
+                        fontSize: 30
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: TextButton(
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(buttonColors[1]),
+                          foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                              side: BorderSide(color: Colors.white)
+                            )
+                          )
+                        ),
+                        onPressed: () {
+                          window.open("https://drive.google.com/file/d/1ToBMYk4iwtqCh-EXwuEcqzeE5AjU6akr/view?usp=sharing", "Mutual Defense Treaty China-France");
+                        }, 
+                        onHover: (value) {
+                          if (value) {
+                            setState(() {
+                              buttonColors[1] = Color(0x99313133);
+                            });
+                          }
+                          else {
+                            setState(() {
+                              buttonColors[1] = Colors.black;
+                            });
+                          }
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Text(
+                            "Mutual Defense Treaty China-France",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: fontMain,
+                              fontSize: 20
+                            )
+                          ),
+                        )
+                      ),
+                    ),
+                    TextButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(buttonColors[2]),
+                        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                            side: BorderSide(color: Colors.white)
+                          )
+                        )
+                      ),
+                      onPressed: () {
+                        window.open("https://drive.google.com/file/d/1q_hh0_IAC5A4rjIQE3SdVWvtAJyUXmIP/view?usp=sharing", "East Pacific Treaty");
+                      }, 
+                      onHover: (value) {
+                        if (value) {
+                          setState(() {
+                            buttonColors[2] = Color(0x99313133);
+                          });
+                        }
+                        else {
+                          setState(() {
+                            buttonColors[2] = Colors.black;
+                          });
+                        }
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Text(
+                          "East Pacific Treaty",
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: fontMain,

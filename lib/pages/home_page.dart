@@ -150,127 +150,133 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image(width: MediaQuery.of(context).size.width/3, height: MediaQuery.of(context).size.width/5, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097141394793054259/image.png?width=1176&height=638"),),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    TextButton(
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(buttonColors[0]),
-                        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                            side: BorderSide(color: Colors.white)
-                          )
-                        )
-                      ),
-                      onPressed: () {
-                        Navigator.pushNamed(context, "/committees");
-                      }, 
-                      onHover: (value) {
-                        if (value) {
-                          setState(() {
-                            buttonColors[0] = Color(0x99313133);
-                          });
-                        }
-                        else {
-                          setState(() {
-                            buttonColors[0] = Colors.black;
-                          });
-                        }
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Text(
-                          "Committees",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: fontTime,
-                            fontSize: 20
-                          )
-                        ),
-                      )
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: TextButton(
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(buttonColors[1]),
-                          foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                            RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                              side: BorderSide(color: Colors.white)
-                            )
-                          )
-                        ),
-                        onPressed: () {
-                          Navigator.pushNamed(context, "/resources");
-                        }, 
-                        onHover: (value) {
-                          if (value) {
-                            setState(() {
-                              buttonColors[1] = Color(0x99313133);
-                            });
-                          }
-                          else {
-                            setState(() {
-                              buttonColors[1] = Colors.black;
-                            });
-                          }
-                        },
-                        child: Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Text(
-                            "Resources",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: fontTime,
-                              fontSize: 20
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        TextButton(
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(buttonColors[0]),
+                            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: BorderSide(color: Colors.white)
+                              )
                             )
                           ),
-                        )
-                      ),
-                    ),
-                    TextButton(
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(buttonColors[2]),
-                        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                            side: BorderSide(color: Colors.white)
-                          )
-                        )
-                      ),
-                      onPressed: () {
-                        Navigator.pushNamed(context, "/secretariat");
-                      }, 
-                      onHover: (value) {
-                        if (value) {
-                          setState(() {
-                            buttonColors[2] = Color(0x99313133);
-                          });
-                        }
-                        else {
-                          setState(() {
-                            buttonColors[2] = Colors.black;
-                          });
-                        }
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Text(
-                          "Secretariat",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: fontTime,
-                            fontSize: 20
+                          onPressed: () {
+                            Navigator.pushNamed(context, "/committees");
+                          }, 
+                          onHover: (value) {
+                            if (value) {
+                              setState(() {
+                                buttonColors[0] = Color(0x99313133);
+                              });
+                            }
+                            else {
+                              setState(() {
+                                buttonColors[0] = Colors.black;
+                              });
+                            }
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              "Committees",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: fontTime,
+                                fontSize: 20
+                              )
+                            ),
                           )
                         ),
-                      )
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: TextButton(
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all<Color>(buttonColors[1]),
+                              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                  side: BorderSide(color: Colors.white)
+                                )
+                              )
+                            ),
+                            onPressed: () {
+                              Navigator.pushNamed(context, "/resources");
+                            }, 
+                            onHover: (value) {
+                              if (value) {
+                                setState(() {
+                                  buttonColors[1] = Color(0x99313133);
+                                });
+                              }
+                              else {
+                                setState(() {
+                                  buttonColors[1] = Colors.black;
+                                });
+                              }
+                            },
+                            child: Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Text(
+                                "Resources",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: fontTime,
+                                  fontSize: 20
+                                )
+                              ),
+                            )
+                          ),
+                        ),
+                        TextButton(
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(buttonColors[2]),
+                            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: BorderSide(color: Colors.white)
+                              )
+                            )
+                          ),
+                          onPressed: () {
+                            Navigator.pushNamed(context, "/secretariat");
+                          }, 
+                          onHover: (value) {
+                            if (value) {
+                              setState(() {
+                                buttonColors[2] = Color(0x99313133);
+                              });
+                            }
+                            else {
+                              setState(() {
+                                buttonColors[2] = Colors.black;
+                              });
+                            }
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              "Secretariat",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: fontTime,
+                                fontSize: 20
+                              )
+                            ),
+                          )
+                        ),
+                      ]
                     ),
-                  ]
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),

@@ -505,6 +505,47 @@ class _UNSCState extends State<UNSC> {
                                   )
                                 ),
                               ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
+                                child: TextButton(
+                                  style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all<Color>(buttonColors[7]),
+                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                      RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10.0),
+                                        side: BorderSide(color: Colors.white)
+                                      )
+                                    )
+                                  ),
+                                  onPressed: () {
+                                    window.open("https://drive.google.com/file/d/1cb-Ccw5p8mI9QUU02g3U2n-ceED2GseY/view?usp=sharing", "FROG - Amended");
+                                  }, 
+                                  onHover: (value) {
+                                    if (value) {
+                                      setState(() {
+                                        buttonColors[7] = Color(0x99313133);
+                                      });
+                                    }
+                                    else {
+                                      setState(() {
+                                        buttonColors[7] = Colors.black;
+                                      });
+                                    }
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Text(
+                                      "FROG - Amended",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: fontMain,
+                                        fontSize: 20
+                                      )
+                                    ),
+                                  )
+                                ),
+                              ),
                             ],
                           )
                         ],
